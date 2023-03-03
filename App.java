@@ -1,5 +1,5 @@
-
-
+import java.text.DecimalFormat;
+import java.util.Scanner;
 import java.util.*;
 
 /*
@@ -10,6 +10,21 @@ public class App {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     Character command = '_';
+
+   
+    double rawA =0;
+    double rawB =0;
+    String displayA, displayB;
+    String choice;
+
+   
+    DecimalFormat _numberFormat= new DecimalFormat("#0.000");
+    displayA = _numberFormat.format(rawA);
+    displayB = _numberFormat.format(rawB);
+
+  
+
+        
 
     // loop until user quits
     while (command != 'q') {
