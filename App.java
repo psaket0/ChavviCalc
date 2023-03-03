@@ -40,6 +40,9 @@ public class App
         //home;
         System.out.print("Enter your choice : ");
         choice = scan.next();
+       System.out.println("A becomes your output when calculated! You can then hit an operation to perform b on a!");
+
+
 
         switches:
         switch (choice) {
@@ -77,18 +80,22 @@ public class App
                b = 0;
                 break switches;
             case "q":
-            System.out.println("\n");
+            System.out.println("Thank you for using the chavviCalculator ");
                 break programs;
             default:
                 System.out.println("Invalid choice");
                 break switches;
             }
-            System.out.println("A becomes your output when calculated! You can then hit an operation to perform b on a!");
+           
+            
 
-        
         System.out.println("Thank you for using the chavviCalculator \n"); }
+       
         
     }
+
+  
+
     public static double A (Scanner scanner){
         System.out.print("Enter A : ");
         return getNum(scanner);
